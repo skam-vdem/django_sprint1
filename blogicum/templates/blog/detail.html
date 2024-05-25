@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% block title %}
-  {{ post.location }} {{ post.date }}
+{{ post.location }} {{ post.date }}
 {% endblock %}
 {% block content %}
+{% include "blog/includes/page.html" with truncating_text=True %}
   <article>
     <ul>
       <li>
